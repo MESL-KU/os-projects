@@ -533,7 +533,7 @@ procdump(void)
   }
 }
 
-int 
+int
 setnice(int pid, int nice)
 {
     if( nice < 0 || nice > 30)
@@ -550,7 +550,7 @@ setnice(int pid, int nice)
     return -1;
 }
 
-int 
+int
 getnice(int pid)
 {
     struct proc *p;
@@ -564,11 +564,10 @@ getnice(int pid)
     return -1;
 }
 
-void 
+void
 ps(void)
 {
-
-    struct proc *p; 
+    struct proc *p;
     acquire(&ptable.lock);
     cprintf("name\tpid\tppid\tmem\tprio\tstate\n");
 
