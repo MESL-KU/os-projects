@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+    os-projects:
+        platform: linux/amd64
+        image: ubuntu:22.04
+        container_name: os-projects
+        stdin_open: true
+        tty: true
+        volumes:
+            - ./xv6-public:/home/os-projects/xv6-public
