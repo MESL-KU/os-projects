@@ -7,4 +7,5 @@ services:
         stdin_open: true
         tty: true
         volumes:
-            - ./xv6-public:/home/os-projects/xv6-public
+            - ./xv6-proj0:/home/os-projects/xv6-proj0
+            - ./xv6-proj1:/home/os-projects/xv6-proj1
